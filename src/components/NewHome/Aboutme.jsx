@@ -1,11 +1,7 @@
 import { useState } from "react"; // Correct import for useState
 import Link from "next/link";
-import Image from "next/image"; // Import for Image component
-import GradientBtn from "../Layout/Btns/GradientBtn";
+import Image from "next/image";
 import Container from "../Layout/Container";
-import SectionTitle from "../Layout/SectionTitle";
-import VideoModal from "../Common/VideoModal";
-
 const Banner = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const videoUrl = "https://www.youtube.com/embed/QyrxlpyUg3E?si=4xvApXDuMabzOxwl"; // URL for embedded video
@@ -91,7 +87,6 @@ const Banner = () => {
           </div>
         </div>
       </Container>
-      <VideoModal isOpen={isModalOpen} onClose={closeModal} videoUrl={videoUrl} />
     </section>
   );
 };

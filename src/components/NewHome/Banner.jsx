@@ -1,9 +1,7 @@
 import { useState } from "react";
 import Image from "next/image";
-import GradientBtn from "../Layout/Btns/GradientBtn";
 import Container from "../Layout/Container";
 import Btn from "../Layout/Btns/Btn";
-import VideoModal from "../Common/VideoModal";
 
 const Banner = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -54,7 +52,7 @@ const Banner = () => {
             </div>
 
             {/* Video Modal */}
-            <VideoModal isOpen={isModalOpen} onClose={closeModal} videoUrl={videoUrl} />
+            {/* <VideoModal isOpen={isModalOpen} onClose={closeModal} videoUrl={videoUrl} /> */}
         </section>
     );
 };

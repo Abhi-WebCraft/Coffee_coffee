@@ -5,8 +5,6 @@ import Banner from "@/components/NewHome/Banner";
 import Clients from "@/components/NewHome/Clients";
 import Testimonials from "@/components/Homepage/Testimonials";
 import Serve from "@/components/ComponentsSection/Serve";
-import Aboutme from "@/components/NewHome/Aboutme";
-import Comprehensive from "@/components/ComponentsSection/Comprehensive";
 import Form from "../components/NewHome/Form";
 import LandingBlog from "../components/Common/LandingBlog"
 import { getAllPostsForLandingPage } from "@/lib/api";
@@ -167,8 +165,8 @@ export default function Home({ blogPosts = { edges: [], pageInfo: {} },referrer,
       <Layout>
         <Banner />
         <Clients />
-        <Comprehensive services={servicesData} />
-        <Aboutme />
+        {/* <Comprehensive services={servicesData} /> */}
+        {/* <Aboutme /> */}
         <Testimonials />
         <LandingBlog blogPosts={blogPosts.edges}/>
         <Form />
