@@ -1,6 +1,5 @@
 import 'react-modal-video/scss/modal-video.scss';
 import "@/styles/globals.css";
-import "@/styles/rajeev.css";
 
 import { Poppins } from "next/font/google"; // Import Poppins font
 import type { AppProps } from "next/app";
