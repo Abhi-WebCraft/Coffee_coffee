@@ -7,9 +7,6 @@ export default function MobileMenus() {
   return (
     <nav className={styles.mobileNav}>
       <ul className={styles.navUL}>
-        {/* <li className={styles.navLI}>
-          <Link href="/" className={styles.menuLink}>Home</Link>
-        </li> */}
         {menu_data.map((item, i) => (
           <li key={i} className={`${styles.navLI} ${item.sub_menus ? "has-submenu" : ''}`}>
             <Link href={item.link} className={styles.menuLink}>{item.title}</Link>

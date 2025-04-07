@@ -1,251 +1,129 @@
+import Container from "@/components/Layout/Container";
+import styles from './Footer.module.css';
 import Image from "next/image";
 import Link from "next/link";
-import styles from "./Footer.module.css";
-import Container from "../Container";
-import Btn from "@/components/Layout/Btns/Btn";
-const contactDetails = [
-{
-icon: "/images/icons/placeholder.svg",
-text: "3/2, Alpha Arcade, Infocity Circle Gandhinagar 382010, India",
-link: "#",
-},
-{
-icon: "/images/icons/email-11.svg",
-text: "info@computyne.com",
-link: "mailto:info@computyne.com",
-},
-];
-const socialLinks = [
-{
-icon: "/images/icons/facebook-white.svg",
-href: "https://www.facebook.com/people/Computyne-Business-Process-Services/100075815080008/", 
-alt: "Facebook Icon",
-},
-{
-icon: "/images/icons/youtube-white.svg",
-href: "https://www.youtube.com/watch?v=E6GazMa5TXA", 
-alt: "Instagram Icon",
-},
-{
-icon: "/images/icons/linkedin-white.svg",
-href: " https://www.linkedin.com/company/13197469/admin/",
-alt: "LinkedIn Icon",
-},
-{
-icon: "/images/icons/twitter-black-shape.svg",
-href: "https://twitter.com/computyne", 
-alt: "Twitter Icon",
-},
-];
+
 export default function Footer() {
-const currentYear = new Date().getFullYear();
-return (
-<>
-<section className="py-[70px] footer-main relative bg-no-repeat bg-top-right bg-[#15153e]" style={{backgroundImage:"url('/images/bg/footer-bg.png')"}}>
-    <div className="footer-left-shape z-10" style={{backgroundImage:"url('/images/bg/left-shape.png')"}}></div>
-    <div className="footer-right-shape z-10" style={{backgroundImage:"url('/images/bg/right-shape.png')"}}></div>
-    <Container>
-        <div className="flex justify-between items-center pb-[30px] border-b border-white footer-text relative z-50">
-            <p className="text-white text-[30px] leading-[40px] footer-text-para">It's Time. Start Transforming Your Business Processes Now.</p>
-            <div>
-            <Btn title="Contact Us" link="/contact-us"/>
-            </div>
-            
+  const currentYear = new Date().getFullYear();
+  const icons = [
+    {
+      imageIcon : "/images/icons/whatsapp.svg",
+      slug:"https://api.whatsapp.com/send?phone=971524495817",
+    },
+    {
+      imageIcon : "/images/icons/facebook.svg",
+      slug:"https://www.facebook.com/daraluloomfz",
+    },
+    {
+      imageIcon : "/images/icons/social.svg",
+      slug:"https://www.instagram.com/daraluloom.fz",
+    },
+    {
+      imageIcon : "/images/icons/linkedin.svg",
+      slug:"https://www.linkedin.com/company/daraluloom",
+    },
+    {
+      imageIcon : "/images/icons/youtube-1.svg",
+      slug:"https://www.youtube.com/channel/UC4wT93nyhPui13rXWMJD4wA",
+    },
+    {
+      imageIcon : "/images/icons/tik-tok-1.svg",
+      slug:"https://www.tiktok.com/@dar.aluloom.inter0?_t=8kqIoQOg8dG&_r=1",
+    },
+    {
+      imageIcon : "/images/icons/twitter1.svg",
+      slug:"https://x.com/AluloomDar44887",
+    },
+  ];
+
+  const contacts = [
+    { href: "tel:+971524495817", icon: "/images/icons/telephone-call-1.svg", text: "+971524495817" },
+    { href: "mailto:info@daraluloom.com", icon: "/images/icons/email-11.svg", text: "info@daraluloom.com" }, 
+    { href: "#", icon: "/images/icons/location-11.svg", text: " 6th floor, Elite Business Center, Al Barsha 1 opp Lulu hypermarket Dubai, UAE" }, 
+    { href: "#", icon: "/images/icons/location-11.svg", text: "Block B - B33 - 176, SRTIP Sharjah, UAE" }, 
+    { href: "#", icon: "/images/icons/location-11.svg", text: "Compass Building, Al Shohada Road, AL Hamra Industrial Zone,  Ras Al Khaimah, UAE" }, 
+  ];
+
+
+  return (
+    <>
+    <div className={styles.footerTop}>
+      <Container>
+        <div className="flex items-center justify-center gap-4">
+        {icons.map ((item, index)=>(
+        <Link href={item.slug} key={index}>
+          <Image src={item.imageIcon} alt="vector" width="40" height="40" className={`w-[40px] h-[40px] ${styles.footerIcon}`}/>
+          </Link>
+        ))}
         </div>
-        <div className="flex flex-col lg:flex-row items-start gap-8 footer-down text-white relative z-50 pt-[50px]">
-            <div className="w-full lg:w-[30%] footer-width">
-                <Image src="/images/logo/white-computyne.svg" alt="computyne-logo" width="150" height="60" className="footer-logo w-[190px] h-[60px]"/>
-                <p className=" text-white  my-4 font-normal text-[15px]">
-                    Computyne is a pioneer at providing outsourcing data entry services from India.
-                </p>
-                <div>
-                    <div className="support-text mt-3">
-                        <ul className="flex flex-col gap-4">
-                            {contactDetails.map((detail, index) => (
-                            <li key={index} className="flex items-center gap-4">
-                                <Image
-                                    src={detail.icon}
-                                    width={40}
-                                    height={40}
-                                    alt={detail.text}
-                                    className="w-[40px] h-[40px] object-cover p-2 rounded-full border-[#777] border hover:bg-[#ff3221]"
-                                    />
-                                <Link href={detail.link} target="_blank" rel="noopener noreferrer">
-                                <p className="text-white ">{detail.text}</p>
-                                </Link>
-                            </li>
-                            ))}
-                        </ul>
-                    </div>
-                    <div className="pt-[30px]">
-                        <ul className="footer-social flex gap-4">
-                            {socialLinks.map((social, index) => (
-                            <li key={index}>
-                                <Link
-                                    href={social.href}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="items-center font-normal text-[15px] gap-3"
-                                    >
-                                <div className="p-2 rounded-full border-[#777] border hover:bg-[#ff3221]">
-                                    <Image
-                                        src={social.icon}
-                                        width={25}
-                                        height={25}
-                                        alt={social.alt}
-                                        className="w-[25px] h-[25px] object-cover"
-                                        />
-                                </div>
-                                </Link>
-                            </li>
-                            ))}
-                        </ul>
-                    </div>
+      </Container>
+    </div>
+      <footer className={styles.footer}>
+        <Container>
+          <div className={styles.footerGrid}>
+            <div className={styles.footerItems}>
+              <div className={styles.footerLogo}>
+              <Link href="/" title="Bhutan holiday tours">
+                <Image src="/images/logo/main-logo.png" alt="Bhutan Best Inbound Tour" width="100" height="100" className='w-[100%]' priority />
+              </Link>
+              </div>
+              <p className="leading-[26px] text-[#000]">Look no further than the Educational consultants at Dar Aluloom International, your premier destination for top-tier guidance and support.</p>
+                <div className="flex items-center gap-4 pt-6">
+                <Image src="/images/icons/time.svg" alt="" width="50" height="50" className="w-[50px] h-[50px] "/>
+                <div className="">
+                <h3 className="text-[#000]">Business Hours</h3>
+                <p className="text-[#000] mt-[-20px]">Monday – Friday 10 am to 7 pm</p>
                 </div>
-            </div>
-            <div className="flex flex-col lg:flex-row w-full lg:w-[70%] justify-between gap-5 footer-width">
-                <div className="text-white w-full lg:w-1/2">
-                    <h3 className="text-[22px] font-semibold mb-4">Quick Link</h3>
-                    <ul className="flex flex-col gap-4">
-                        <li>
-                            <Link
-                                href="/"
-                                className="footer-items hover: font-normal text-[16px]"
-                                >
-                            Home
-                            </Link>
-                        </li>
-                        <li>
-                            <Link
-                                href="/about-us"
-                                className="footer-items hover: font-normal text-[16px]"
-                                >
-                            About Us
-                            </Link>
-                        </li>
-                        <li>
-                            <Link
-                                href="/case-studies"
-                                className="footer-items hover: font-normal text-[16px]"
-                                >
-                            Case Studies
-                            </Link>
-                        </li>
-                        <li>
-                            <Link
-                                href="/blog"
-                                className="footer-items hover: font-normal text-[16px]"
-                                >
-                            Blogs
-                            </Link>
-                        </li>
-                        <li>
-                            <Link
-                                href="/contact-us"
-                                className="footer-items hover: font-normal text-[16px]"
-                                >
-                            Contact Us
-                            </Link>
-                        </li>
-                    </ul>
-                </div>
-                <div className="text-white w-full lg:w-1/2">
-                    <h3 className="text-[22px] font-semibold mb-4">
-                        Industries
-                    </h3>
-                    <ul className="flex flex-col gap-4">
-                        <li>
-                            <Link
-                                href="/accounting-and-finance-back-office-solutions"
-                                className="footer-items hover: font-normal text-[16px]"
-                                >
-                            Accounting & Finance
-                            </Link>
-                        </li>
-                        <li>
-                            <Link
-                                href="/educational-institutions-back-office-solutions"
-                                className="footer-items hover: font-normal text-[16px]"
-                                >
-                            Educational Institutions
-                            </Link>
-                        </li>
-                        <li>
-                            <Link
-                                href="/logistics-and-shipping-back-office-solutions"
-                                className="footer-items hover: font-normal text-[16px]"
-                                >
-                            Logistics & Shipping
-                            </Link>
-                        </li>
-                        <li>
-                            <Link
-                                href="/real-estate-and-mortgage-back-office-solutions"
-                                className="footer-items hover: font-normal text-[16px]"
-                                >
-                            Real Estate & Mortgage
-                            </Link>
-                        </li>
-                        <li>
-                            <Link
-                                href="/retail-and-ecommerce-back-office-solutions"
-                                className="footer-items hover: font-normal text-[16px]"
-                                >
-                            Retail & E-Commerce
-                            </Link>
-                        </li>
-                        <li>
-                            <Link
-                                href="/restaurant-and-hospitality-back-office-solutions"
-                                className="footer-items hover: font-normal text-[16px]"
-                                >
-                            Restaurant & Hospitality
-                            </Link>
-                        </li>
-                    </ul>
-                </div>
-                <div className="text-white w-full lg:w-1/2">
-                    <h3 className="text-[22px] font-semibold mb-4">
-                        Our Services
-                    </h3>
-                    <ul className="flex flex-col gap-4">
-                        <li>
-                            <Link
-                                href="/data-entry-services"
-                                className="footer-items hover: font-normal text-[16px]"
-                                >
-                            Data Entry
-                            </Link>
-                        </li>
-                        <li>
-                            <Link
-                                href="/data-processing-services"
-                                className="footer-items hover: font-normal text-[16px]"
-                                >
-                            Data Processing
-                            </Link>
-                        </li>
-                        <li>
-                            <Link
-                                href="/data-management-services"
-                                className="footer-items hover: font-normal text-[16px]"
-                                >
-                            Data Management
-                            </Link>
-                        </li>
-                    </ul>
                 </div>
             </div>
-        </div>
-    </Container>
-</section>
-<div className={styles.footerbottom}>
-    <Container>
-        <div className="flex justify-between gap-5 flex-wrap text-white">
-            <div>&copy; {currentYear} New Website. All Rights Reserved.</div>
-        </div>
-    </Container>
-</div>
-</>
-);
+            <div className={`${styles.footerItems} text-[#bf9e60]`}>
+              <h4 className="text-[#28aa4a]">Quick Links</h4>
+              <ul>
+                <li><Link href="/">Home</Link></li>
+                <li><Link href="/about">About Us</Link></li>
+                <li><Link href="/blog">Blog</Link></li>
+                <li><Link href="/privacy-policy">Privacy Policy </Link></li>
+                <li><Link href="/terms-and-conditions">Terms & Conditions</Link></li>
+              </ul>
+            </div>
+            <div className={`${styles.footerItems} text-[#bf9e60]`}>
+              <h4 className="text-[#28aa4a]">Test Prep</h4>
+              <ul>
+                <li><Link href="/test-preparation-in-uae">Test Preparation in UAE</Link></li>
+                <li><Link href="/ielts-test-prep-in-uae">IELTS Test Prep</Link></li>
+                <li><Link href="/sat-preparation-in-uae">SAT Preparation</Link></li>
+                <li><Link href="/ucat-preparation-in-uae">UCAT Preparation</Link></li>
+              </ul>
+            </div>
+            <div className={`${styles.footerItems} text-[#bf9e60]`}>
+              <h4 className="text-[#28aa4a]">Contact Us</h4>
+                <ul className="flex flex-col gap-3">
+                  {contacts.map((contact, index) => (
+                    <li key={index} className="flex items-center gap-3">
+                      <Link href={contact.href} className="flex items-center gap-4">
+                      <Image
+                      src={contact.icon}
+                      alt="icon-vector"
+                      width={30}
+                      height={30}
+                      className="w-[30px] h-[30px]"
+                      />
+                      <p className="leading-[28px]">{contact.text}</p>
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+            </div>
+          </div>
+        </Container>
+      </footer>
+      <div className={`${styles.footerbottom}  text-[#000] bg-[#e7f2e2]`}>
+        <Container>
+          <div className="flex flex-wrap justify-between gap-5">
+            <div>&copy; {currentYear} Dar Aluloom International. All Rights Reserved.</div>
+          </div>
+        </Container>
+      </div>
+    </>
+  );
 }

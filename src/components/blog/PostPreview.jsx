@@ -2,6 +2,7 @@ import Avatar from "./Avatar";
 import Date from "./Date";
 import CoverImage from "./CoverImage";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function PostPreview({
   title,
@@ -10,38 +11,41 @@ export default function PostPreview({
   excerpt,
   author,
   slug,
-  excerptLength = 80, 
+  titleLength = 30,
+  excerptLength = 80,
 }) {
-  const truncateExcerpt = (text, length) => {
-    if (text.length <= length) return text;
-    return `${text.substring(0, length)}...`;
+  // Function to truncate text
+  const truncateText = (text, length) => {
+    return text.length <= length ? text : `${text.substring(0, length)}...`;
   };
- // const amarCoverImage=coverImage?coverImage:'/images/amar-web-desinger-post-sm.webp'
+
   return (
-    <div className="blogs-div flex flex-col  justify-between">
-        <div>
-            <div className="mb-5">
-            <CoverImage title={title} coverImage={coverImage} slug={slug} />
-          </div>
-          <h3 className="text-3xl mb-3 leading-snug blog-title">
-            <Link
-              href={`/blog/${slug}`}
-              className="hover:text-[#ff3221]"
-              dangerouslySetInnerHTML={{ __html: title }}
-            ></Link>
-          </h3>
-          <div className="text-[#ff3221] font-bold mb-4">
-            <Date dateString={date} />
-          </div>
-          <div
-            className="leading-relaxed mb-4"
-            dangerouslySetInnerHTML={{ __html: truncateExcerpt(excerpt, excerptLength) }}
-          />
-        </div>
-      {/* <Avatar author={author} /> */}
-     <div className="flex border-t pt-2  items-center text-lg font-semibold  hover:text-[#ff3221] transition-all">
-        <Link href={`/blog/${slug}`} className="" >Read more <span className="ml-2 text-xl">≫</span></Link>
-     </div>
+    <div className="blogs-div">
+      <div className="mb-5">
+        <CoverImage title={title} coverImage={coverImage} slug={slug} />
+      </div>
+      <h3 className="text-[20px] font-semibold mb-3 letter-space">
+        <Link
+          href={`/${slug}`}
+          className="hover:text-[#28aa4a]"
+          dangerouslySetInnerHTML={{
+            __html: truncateText(title, titleLength),
+          }}
+        ></Link>
+      </h3>
+      <div className="text-[14px] text-[#28aa4a] font-bold mb-4">
+        <Date dateString={date} />
+      </div>
+      <div
+        className="mb-3 blog-paragraph"
+        dangerouslySetInnerHTML={{
+          __html: truncateText(excerpt, excerptLength),
+        }}
+      />
+      <Link href={`/${slug}`} className="flex items-center gap-2 pt-2 border-t text-[#28aa4a] font-bold">
+        <p>Read More</p>
+        <span className="ml-2 text-xl">≫</span>
+      </Link>
     </div>
   );
 }

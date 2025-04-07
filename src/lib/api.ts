@@ -5,6 +5,7 @@ interface Headers {
 const API_URL = process.env.WORDPRESS_API_URL;
 
 async function fetchAPI(query = "", { variables }: Record<string, any> = {}) {
+  console.log(API_URL);
   if (!API_URL) {
     throw new Error("WORDPRESS_API_URL is not defined");
   }
@@ -218,67 +219,3 @@ export async function getPostAndMorePosts(slug:any, preview:any, previewData:any
 
   return data;
 }
-export async function RecentPostsForHome() {
-  const data = await fetchAPI(
-    `
-    query AllPosts { 
-        posts(
-          first: 5
-          where: {
-            orderby: {field: DATE, order: DESC}
-          }
-        ) {
-          edges {
-            node {
-              title
-              slug
-              featuredImage {
-                node {
-                  sourceUrl
-                }
-              }
-            }
-          }
-        }
-      }
-    `,
-    {
-      variables: {},
-    }
-  );
-
-  return data?.posts || { edges: [] };
-}
-export async function getAllPostsForLandingPage() {
-  const data = await fetchAPI(
-    `
-    query AllPosts { 
-        posts(
-          first: 4
-          where: {
-            orderby: {field: DATE, order: DESC}
-          }
-        ) {
-          edges {
-            node {
-              title
-              excerpt
-              slug
-              featuredImage {
-                node {
-                  sourceUrl
-                }
-              }
-            }
-          }
-        }
-      }
-    `,
-    {
-      variables: {},
-    }
-  );
-
-  return data?.posts || { edges: [] };
-}
-

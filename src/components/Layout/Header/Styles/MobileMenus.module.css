@@ -1,5 +1,6 @@
 /* MobileMenus.module.css */
 .mobileNav {
+  width: 650px;
 }
 
 .navUL {
@@ -16,7 +17,7 @@
   font-weight: 600;
   justify-content: space-between;
   align-items: center;
-  color: var(--main-color);
+  color: #f3c257;
 }
 
 .menuLink::after {
@@ -43,6 +44,7 @@
   padding-left: 40px;
   justify-content: space-between;
   align-items: center;
+  color: white;
 }
 
 .subMenuLink::after {

@@ -1,99 +1,67 @@
 const menu_data = [
+  {
+    has_dropdown: false,
+    title: "Home",
+    link: "/",
+  },
 
-    {
-        has_dropdown: true,
-        title: "Company",
-        link: "#",
-        dropdownDetails: {
-            title: "Company ",
-            description: "Explore more about our company and values:",
-            readMoreLink: "/company/about-us",
-        },
-        sub_menus: [
-            { link: "/company/about-us", title: "About Us", icon: "/images/sub-menu-icon/accounts.svg" },
-            { link: "/company/transition-process", title: "Transition Process", icon: "/images/sub-menu-icon/mortarboard-1.svg" },
-            { link: "/company/engagement-models", title: "Engagement Models", icon: "/images/sub-menu-icon/delivery-truck.svg" },
-            { link: "/company/secure-data-transfer-and-storage", title: "Data Transfer & Storage", icon: "/images/sub-menu-icon/investment.svg" },
-            { link: "/blog", title: "Blog", icon: "/images/sub-menu-icon/checkout.svg" },
-        ],
-    },
+  {
+    has_dropdown: true,
+    title: "Our Services",
+    link: "#",
+    sub_menus: [
+      { link: "/education-consultants-in-dubai", title: "Education Consultants in Dubai" },
+      { link: "/college-admissions-consultant-in-uae", title: " College Admissions Consultant in UAE" },
+      { link: "/medicine-college-consultant-in-dubai", title: "Medicine College Consultant in Dubai" },
+      { link: "/engineering-college-consultant-in-dubai", title: "Engineering College Consultant in Dubai" },
+      { link: "/canadian-college-consultant-in-dubai", title: "Canadian College Consultant in Dubai" },
+      { link: "/us-college-consultant-in-uae", title: "US College Consultant in UAE" },
+      { link: "/uk-college-admission-consultant-in-uae", title: "UK College Admissions Consultant in UAE" },
+    ],
+  },
+  {
+    has_dropdown: true,
+    title: "Test Prep",
+    link: "#",
+    sub_menus: [
+      { link: "/test-preparation-in-uae", title: "Test Preparation in UAE" },
+      { link: "/ielts-test-prep-in-dubai", title: "IELTS Test Prep" },
+      { link: "/sat-preparation-in-dubai", title: "SAT Preparation" },
+      { link: "/ucat-preparation-in-dubai", title: "UCAT Preparation" },
+      
+    ],
+  },
 
-    {
-        has_dropdown: true,
-        title: "Data Entry",
-        link: "/data-entry-services",
-        dropdownDetails: {
-            title: "Data Entry ",
-            description: "Explore more about our company and values:",
-            readMoreLink: "/data-entry-services",
-        },
-        sub_menus: [
-            { link: "/document-data-entry-services", title: "Document Data Entry", icon: "/images/sub-menu-icon/contract.svg", },
-            { link: "/mortgage-data-entry-services", title: "Mortgage Data Entry", icon: "/images/sub-menu-icon/discount.svg", },
-            { link: "/real-estate-data-collection-services", title: "Real Estate Data Collection", icon: "/images/sub-menu-icon/apartment-1.svg", },
-            { link: "/image-data-entry-services", title: "Image Data Entry", icon: "/images/sub-menu-icon/image-1.svg", },
-            { link: "/outsourcing-typing-services", title: "Typing Services", icon: "/images/sub-menu-icon/keyboard.svg", },
-        ],
-    },
-    {
-        has_dropdown: true,
-        title: "Data Processing",
-        link: "/data-processing-services",
-        dropdownDetails: {
-            title: "Data Processing ",
-            description: "Explore more about our company and values:",
-            readMoreLink: "/data-processing-services",
-        },
-        sub_menus: [
-            { link: "/invoice-processing-services", title: "Invoice Processing", icon: "/images/sub-menu-icon/invoice-1.svg" },
-            { link: "/outsource-freight-audit-services", title: "Freight Audit", icon: "/images/sub-menu-icon/transportation.svg" },
-            { link: "/resume-formatting-and-processing-services", title: "Resume Processing", icon: "/images/sub-menu-icon/cv.svg" },
-            { link: "/data-cleansing-and-enhancement-services", title: "Data Cleansing", icon: "/images/sub-menu-icon/data-cleaning-1.svg" },
-            { link: "/survey-and-forms-processing-services", title: "Survey Forms Processing", icon: "/images/sub-menu-icon/online-survey.svg" },
-        ],
-    },
-    {
-        has_dropdown: true,
-        title: "Data Management",
-        link: "/data-management-services",
-        dropdownDetails: {
-            title: "Data Management ",
-            description: "Explore more about our company and values:",
-            readMoreLink: "/data-management-services",
-        },
-        sub_menus: [
-            { link: "/outsource-catalog-management", title: "Catalog Management", icon: "/images/sub-menu-icon/catalog-1.svg" },
-            { link: "/data-collection-services", title: "Data Collection", icon: "/images/sub-menu-icon/data-collection-1.svg" },
-            { link: "/web-research-services", title: "Web Research", icon: "/images/sub-menu-icon/web.svg" },
-            { link: "/web-scraping-services", title: "Web Scraping", icon: "/images/sub-menu-icon/security-1.svg" },
-            { link: "/virtual-assistant-services", title: "Virtual Assistants", icon: "/images/sub-menu-icon/virtual-assistant-1.svg" }
-        ],
-    },
-    {
-        has_dropdown: true,
-        title: "Industries",
-        link: "#",
-        dropdownDetails: {
-            title: "Industries ",
-            description: "Explore more about our company and values:",
-            readMoreLink: "#",
-        },
-        sub_menus: [
-            { link: "/accounting-and-finance-back-office-solutions", title: "Accounting & Finance", icon: "/images/sub-menu-icon/accounts.svg" },
-            { link: "/educational-institutions-back-office-solutions", title: "Educational Institutions", icon: "/images/sub-menu-icon/mortarboard-1.svg" },
-            { link: "/logistics-and-shipping-back-office-solutions", title: "Logistics & Shipping", icon: "/images/sub-menu-icon/delivery-truck.svg" },
-            { link: "/real-estate-and-mortgage-back-office-solutions", title: "Real Estate & Mortgage", icon: "/images/sub-menu-icon/investment.svg" },
-            { link: "/retail-and-ecommerce-back-office-solutions", title: "Retail & e-Commerce", icon: "/images/sub-menu-icon/checkout.svg" },
-            { link: "/restaurant-and-hospitality-back-office-solutions", title: "Restaurant & Hospitality", icon: "/images/sub-menu-icon/food-tray.svg" },
-        ],
-    },
+  {
+    has_dropdown: false,
+   title: "Subject Tutoring",
+    link: "/subject-tutoring-in-uae-dubai",
+    // sub_menus: [
+    //   { link: "/social-media-marketing", title: "Social Media Marketing" },
+    //   { link: "/e-commerce", title: "E-Commerce" },
+    //   { link: "/general-trading", title: "General Trading" },
+    // ],
+  },
+  {
+    has_dropdown: true,
+    title: "About",
+    link: "/about",
+    // sub_menus: [
+    //   { link: "/about", title: "About us" },
+    //   { link: "/our-team", title: "Our Team" },
+    // ],
+  },
 
-    {
-        has_dropdown: true,
-        title: "Case Studies",
-        link: "/case-studies",
-    },
-
+  {
+    has_dropdown: false,
+    title: "Blog",
+    link: "/blog/",
+  },
+  {
+    has_dropdown: false,
+    title: "Contact us",
+    link: "/contact",
+  },
 ];
 
 export default menu_data;

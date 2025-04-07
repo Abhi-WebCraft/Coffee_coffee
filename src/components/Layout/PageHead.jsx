@@ -10,19 +10,19 @@ export default function PageHead({ PageMeta }) {
             <meta name="description" content={PageMeta.description} />
             <meta name="keywords" content={PageMeta.keywords || "default, keywords, here"} />
             <meta name="robots" content=" follow, index" />
-            <link rel="canonical" href={`https://www.computyne.com${pathname}`} />
+            <link rel="canonical" href={`https://www.daraluloom.com${pathname}`} />
             <meta property="og:locale" content="en_US" />
             <meta property="og:type" content="website" />
             <meta property="og:title" content={PageMeta.title} />
             <meta property="og:description" content={PageMeta.description} />
-            <meta property="og:url" content={`https://www.computyne.com${pathname}`} />
-            <meta property="og:site_name" content="Computyne" />
+            <meta property="og:url" content={`https://www.daraluloom.com${pathname}`} />
+            <meta property="og:site_name" content="Dar Aluloom International" />
             <meta property="article:publisher" content="https://www.facebook.com/kaartikgor/" />
             <meta property="article:author" content="https://www.facebook.com/kaartikgor" />
             {PageMeta.ogimage && PageMeta.ogimage !== "/images/prof" ? (
                 <meta property="og:image" content={PageMeta.ogimage} />
             ) : (
-                <meta property="og:image" content="/images/computyne.jpg" />
+                <meta property="og:image" content="/images/kaartik-gor.jpg" />
             )}
             <meta property="og:image:width" content="1422" />
             <meta property="og:image:height" content="800" />
@@ -35,7 +35,7 @@ export default function PageHead({ PageMeta }) {
             {PageMeta.ogimage && PageMeta.ogimage !== "/images/prof" ? (
                 <meta name="twitter:image" content={PageMeta.ogimage} />
             ) : (
-                <meta name="twitter:image" content="/images/computyne.jpg" />
+                <meta name="twitter:image" content="/images/kaartik-gor.jpg" />
             )}
         </Head>
     );

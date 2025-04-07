@@ -13,37 +13,49 @@ export default function SidebarCTA({ CallActive, setCallActive }) {
           </div>
           <div className={styles.CTABlock}>
             <div>
-                <h4>Get in touch</h4>
-                <p>Feel free to connect with us</p>
+                <h4 className='text-[#28aa4a]'>Get in touch</h4>
+                <p className='text-black'>Plan your perfect trip with us.</p>
             </div>
             <div className={styles.CTACol}>
                 <div className={styles.CTAicon}><Image src="images/icons/call.svg" width={50} height={50} alt="icon"/></div>
                 <div className={styles.CTAinfo}>
-                <Link href="tel:+91-9924556577">+91-9924556577 <span>Helpline Number</span></Link>
+                <Link href="tel:+971524495817">+971524495817 <span>Helpline Number</span></Link>
                 </div>
             </div>
             <div className={styles.CTACol}>
-                <div className={styles.CTAicon}><Image src="images/icons/whatsapp.svg" width={50} height={50} alt="icon"/></div>
+                <div className={styles.CTAicon}><Image src="images/icons/call-1.svg" width={50} height={50} alt="icon"/></div>
                 <div className={styles.CTAinfo}>
-                <Link href="https://wa.me/919924556577">+91-9924556577 <span>Whatsapp Number</span></Link>
+                <Link href="tel:+97172041111">+97172041111<span>Telephone Number</span></Link>
                 </div>
             </div>
             <div className={styles.CTACol}>
                 <div className={styles.CTAicon}><Image src="images/icons/mail.svg" width={50} height={50} alt="icon"/></div>
                 <div className={styles.CTAinfo}>
-                <Link href="mailto:info@computyne.com">info@computyne.com <span>Online Support</span></Link>
+                <Link href="mailto:info@daraluloom.com">info@daraluloom.com <span>Online Support</span></Link>
                 </div>
             </div>
             <div className={styles.CTACol}>
                 <div className={styles.CTAicon}><Image src="images/icons/map.svg" width={50} height={50} alt="icon"/></div>
                 <div className={styles.CTAinfo}>
-                <Link href="https://maps.app.goo.gl/wQviLnQTsUFfoTVd8" target='_blank'>3/2, Alpha Arcade, Infocity Circle Gandhinagar 382010, India<span>Mail Address</span></Link>
+                <Link href="https://maps.app.goo.gl/wQviLnQTsUFfoTVd8" target='_blank'>Compass Building, Al Shohada Road, AL Hamra Industrial Zone, Ras Al Khaimah, UAE</Link>
+                </div>
+            </div>
+            <div className={styles.CTACol}>
+                <div className={styles.CTAicon}><Image src="images/icons/map.svg" width={50} height={50} alt="icon"/></div>
+                <div className={styles.CTAinfo}>
+                <Link href="https://maps.app.goo.gl/wQviLnQTsUFfoTVd8" target='_blank'>Block B - B33 - 176, SRTIP Sharjah, UAE</Link>
+                </div>
+            </div>
+            <div className={styles.CTACol}>
+                <div className={styles.CTAicon}><Image src="images/icons/map.svg" width={50} height={50} alt="icon"/></div>
+                <div className={styles.CTAinfo}>
+                <Link href="https://maps.app.goo.gl/wQviLnQTsUFfoTVd8" target='_blank'> 6th floor, Elite Business Center, Al Barsha 1 opp Lulu hypermarket Dubai, UAE<span>Mail Address</span></Link>
                 </div>
             </div>
             </div>
           <div className={styles.SidebarCTABottom}>
-            <div className={styles.SidebarCTABottomText}>Need help? Let our team solve it..</div>
-            <Btn title="Gett A free Estimate" link="/contact-us" />
+            <div className={styles.SidebarCTABottomText}>Need help? Let us help you.</div>
+            <Btn title="Book a Free Demo" link="/contact" />
           </div>
         </div>
       </div>

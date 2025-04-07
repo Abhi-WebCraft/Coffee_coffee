@@ -13,8 +13,8 @@
   justify-content: center;
   align-items: center;
   position: fixed;
-  bottom: 70px;
-  right: 30px;
+  bottom: 40px;
+  left: 20px;
   cursor: pointer;
   background-color: #25d366;
   border-radius: 50%;
@@ -103,6 +103,7 @@
   width: 60px;
   border: 1px solid rgba(255, 255, 255, 0.473);
   background-color: white;
+  object-fit: contain;
 }
 
 .chatHeader .avatar:after {

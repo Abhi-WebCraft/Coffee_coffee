@@ -1,6 +1,11 @@
-const { protocol, hostname, port, pathname } = new URL(
-  process.env.WORDPRESS_API_URL,
-);
+if (!process.env.WORDPRESS_API_URL) {
+  throw new Error(`
+    Please provide a valid WordPress instance URL.
+    Add to your environment variables WORDPRESS_API_URL.
+  `);
+}
+
+const { protocol, hostname, port } = new URL(process.env.WORDPRESS_API_URL);
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -13,25 +18,35 @@ const nextConfig = {
       {
         protocol: 'https',
         hostname: 'secure.gravatar.com',
-        port,
+        port: '', // Leave port blank unless explicitly needed
         pathname: '/avatar/**',
       },
       {
         protocol: 'https',
-        hostname: 'blog.computyne.com',
-        port,
+        hostname: 'blog.daraluloom.com',
+        port: '',
         pathname: '/wp-content/uploads/**',
-      },
-      {
-        protocol: 'https',
-        hostname: 'www.computyne.com', // Add this
-        pathname: '/wp-content/uploads/**', // Add this
       },
     ],
   },
   async redirects() {
+    console.log("Redirects function is running!"); // Debug log
     return [
-      // Your existing redirects
+      {
+        source: '/sat-preparation-in-uae',
+        destination: '/sat-preparation-in-dubai',
+        permanent: true, // Use true for a 308 redirect
+      },
+      {
+        source: '/ielts-test-prep-in-uae',
+        destination: '/ielts-test-prep-in-dubai',
+        permanent: true, // Use true for a 308 redirect
+      },
+      {
+        source: '/ucat-preparation-in-uae',
+        destination: '/ucat-preparation-in-dubai',
+        permanent: true, // Use true for a 308 redirect
+      },
     ];
   },
 };

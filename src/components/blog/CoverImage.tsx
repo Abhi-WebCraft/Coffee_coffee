@@ -21,14 +21,14 @@ export default function CoverImage({ title, coverImage, slug }: Props) {
       alt={title}
       src={amarCoverImage}
       className={cn("shadow-small", {
-        "hover:shadow-medium transition-shadow duration-200 max-h-[300px] lg:h-[250px] md:h-auto h-auto w-full": slug,
+        "hover:shadow-medium transition-shadow duration-200 max-h-[300px] lg:h-[250px] md:h-auto h-auto w-full object-cover": slug,
       })}
     />
   );
   return (
     <div className="sm:mx-0 ">
       {slug ? (
-        <Link href={`/blog/${slug}`} aria-label={title}>
+        <Link href={slug} aria-label={title}>
           {image}
         </Link>
       ) : (
