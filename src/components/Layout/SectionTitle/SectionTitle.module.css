@@ -6,7 +6,7 @@
   .sectionHeading {
     letter-spacing: -1px;
     font-size: 40px;
-    color: #bf9e60;
+    color: #000;
   }
   
   .titleSpan {
@@ -17,7 +17,7 @@
     text-transform: uppercase;
     font-weight: 600;
     font-size: 15px;
-    color: #28aa4a;
+    color: #161179;
   }
   
   .sectionTitleContent {

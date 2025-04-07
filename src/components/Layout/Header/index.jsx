@@ -20,12 +20,13 @@ export default function Header() {
 
   return (
     <>
-      <header id="header-sticky" className={`${styles.headerContainer} ${sticky ? styles.headerSticky : ""}`}>
+      <header id="header-sticky" className={`${styles.headerContainer} ${sticky ? styles.headerSticky : "bg-[#161179]"}`}>
         <Container>
           <div className={styles.navbar}>
             <div className={styles.navbarLogo}>
               <Link href="/" title="Bhutan holiday tours">
-                <Image src="/images/logo/main-logo.png" alt="Bhutan Best Inbound Tour" width="100" height="100" className='w-[100%]' priority />
+                {/* <Image src="/images/logo/main-logo.png" alt="Bhutan Best Inbound Tour" width="100" height="100" className='w-[100%]' priority /> */}
+                <h2 className='text-[30px]'><span className='text-[#fff]'>Abhi</span>_*</h2>
               </Link>
             </div>
             <div className={styles.navigation}>

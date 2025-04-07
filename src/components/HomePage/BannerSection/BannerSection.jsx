@@ -33,7 +33,7 @@ export default function App() {
   return (
     <section className={styles.bannerslider}>
       {/* Static background image */}
-      <div className="absolute inset-0 w-full h-[700px] bg-center bg-cover" style={{ backgroundImage: 'url(/images/banner/4.jpg)' }}></div>
+      <div className="absolute inset-0 w-full h-[700px] bg-center bg-cover" style={{ backgroundImage: 'url(/images/abhi/hero-img.jpg)' }}></div>
 
       {/* Swiper component for sliding text content */}
       <Swiper
@@ -56,11 +56,11 @@ export default function App() {
                 <div className="absolute top-[50%] left-[20%] transform -translate-x-[20%] -translate-y-[50%] max-w-[800px] banner-content">
                   <div className='flex flex-col gap-6'>
                     {index === 0 ? (
-                      <h1 className='text-[#bf9e60]'>{banner.heading} <span className='rajeev text-[65px] leading-[75px] banner-h2 '> {banner.heading1}</span>&nbsp;
-                      <span className='text-[65px] leading-[75px] text-[#bf9e60] banner-h2'>{banner.heading2}</span></h1>
+                      <h1 className='text-[#fff]'>{banner.heading} <span className='rajeev text-[65px] leading-[75px] banner-h2 '> {banner.heading1}</span>&nbsp;
+                      <span className='text-[65px] leading-[75px] text-[#fff] banner-h2'>{banner.heading2}</span></h1>
                     ) : (
-                      <h2 className='text-[65px] leading-[75px] text-[#bf9e60] banner-h2'>{banner.heading} <span className='rajeev text-[65px] leading-[75px] banner-h2'> {banner.heading1}</span>&nbsp;
-                      <span className='text-[65px] leading-[75px] text-[#bf9e60] banner-h2'>{banner.heading2}</span></h2>
+                      <h2 className='text-[65px] leading-[75px] text-[#fff] banner-h2'>{banner.heading} <span className='rajeev text-[65px] leading-[75px] banner-h2'> {banner.heading1}</span>&nbsp;
+                      <span className='text-[65px] leading-[75px] text-[#fff] banner-h2'>{banner.heading2}</span></h2>
                     )}
                     <p className='text-[18px] text-banner text-white'>
                       Welcome to Dar Aluloom International: Are you a student in the UAE aspiring to pursue higher education in the UK, US, Canada, or Europe? Look no further than the Educational consultants at Dar Aluloom International, your premier destination for top-tier guidance and support.
@@ -72,7 +72,7 @@ export default function App() {
                       <Link href="tel:+971524495817">
                         <div className='flex items-center gap-3'>
                           <Image src="/images/icons/phone-call.svg" alt="phone-vector" width="50" height="50" className="w-[50px] h-[50px] banner-icon" />
-                          <p className='text-[25px] font-bold banner-cta text-white'>+971524495817</p>
+                          <p className='text-[25px] font-bold banner-cta text-white'>+7341173250</p>
                         </div>
                       </Link>
                     </div>
