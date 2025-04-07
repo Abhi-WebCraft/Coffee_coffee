@@ -8,40 +8,40 @@ export default function Footer() {
   const icons = [
     {
       imageIcon : "/images/icons/whatsapp.svg",
-      slug:"https://api.whatsapp.com/send?phone=971524495817",
+      slug:"",
     },
     {
       imageIcon : "/images/icons/facebook.svg",
-      slug:"https://www.facebook.com/daraluloomfz",
+      slug:"",
     },
     {
       imageIcon : "/images/icons/social.svg",
-      slug:"https://www.instagram.com/daraluloom.fz",
+      slug:"",
     },
     {
       imageIcon : "/images/icons/linkedin.svg",
-      slug:"https://www.linkedin.com/company/daraluloom",
+      slug:"",
     },
     {
       imageIcon : "/images/icons/youtube-1.svg",
-      slug:"https://www.youtube.com/channel/UC4wT93nyhPui13rXWMJD4wA",
+      slug:"",
     },
     {
       imageIcon : "/images/icons/tik-tok-1.svg",
-      slug:"https://www.tiktok.com/@dar.aluloom.inter0?_t=8kqIoQOg8dG&_r=1",
+      slug:"",
     },
     {
       imageIcon : "/images/icons/twitter1.svg",
-      slug:"https://x.com/AluloomDar44887",
+      slug:"",
     },
   ];
 
   const contacts = [
-    { href: "tel:+971524495817", icon: "/images/icons/telephone-call-1.svg", text: "+971524495817" },
-    { href: "mailto:info@daraluloom.com", icon: "/images/icons/email-11.svg", text: "info@daraluloom.com" }, 
-    { href: "#", icon: "/images/icons/location-11.svg", text: " 6th floor, Elite Business Center, Al Barsha 1 opp Lulu hypermarket Dubai, UAE" }, 
-    { href: "#", icon: "/images/icons/location-11.svg", text: "Block B - B33 - 176, SRTIP Sharjah, UAE" }, 
-    { href: "#", icon: "/images/icons/location-11.svg", text: "Compass Building, Al Shohada Road, AL Hamra Industrial Zone,  Ras Al Khaimah, UAE" }, 
+    { href: "tel:+", icon: "/images/icons/telephone-call-1.svg", text: "+" },
+    { href: "mailto:info@daraluloom.com", icon: "/images/icons/email-11.svg", text: "abhishek.com" }, 
+    { href: "#", icon: "/images/icons/location-11.svg", text: " ddddddddddddddd" }, 
+    { href: "#", icon: "/images/icons/location-11.svg", text: "ddddddddddddddd" }, 
+    { href: "#", icon: "/images/icons/location-11.svg", text: "sdsfsdffffffffff" }, 
   ];
 
 
@@ -64,7 +64,8 @@ export default function Footer() {
             <div className={styles.footerItems}>
               <div className={styles.footerLogo}>
               <Link href="/" title="Bhutan holiday tours">
-                <Image src="/images/logo/main-logo.png" alt="Bhutan Best Inbound Tour" width="100" height="100" className='w-[100%]' priority />
+                {/* <Image src="/images/logo/main-logo.png" alt="Bhutan Best Inbound Tour" width="100" height="100" className='w-[100%]' priority /> */}
+                <h2 className='text-[30px]'><span className='text-[#161179]'>Abhi</span>_*</h2>
               </Link>
               </div>
               <p className="leading-[26px] text-[#000]">Look no further than the Educational consultants at Dar Aluloom International, your premier destination for top-tier guidance and support.</p>
@@ -77,7 +78,7 @@ export default function Footer() {
                 </div>
             </div>
             <div className={`${styles.footerItems} text-[#bf9e60]`}>
-              <h4 className="text-[#28aa4a]">Quick Links</h4>
+              <h4 className="text-[#161179]">Quick Links</h4>
               <ul>
                 <li><Link href="/">Home</Link></li>
                 <li><Link href="/about">About Us</Link></li>
@@ -87,7 +88,7 @@ export default function Footer() {
               </ul>
             </div>
             <div className={`${styles.footerItems} text-[#bf9e60]`}>
-              <h4 className="text-[#28aa4a]">Test Prep</h4>
+              <h4 className="text-[#161179]">Test Prep</h4>
               <ul>
                 <li><Link href="/test-preparation-in-uae">Test Preparation in UAE</Link></li>
                 <li><Link href="/ielts-test-prep-in-uae">IELTS Test Prep</Link></li>
@@ -96,7 +97,7 @@ export default function Footer() {
               </ul>
             </div>
             <div className={`${styles.footerItems} text-[#bf9e60]`}>
-              <h4 className="text-[#28aa4a]">Contact Us</h4>
+              <h4 className="text-[#161179]">Contact Us</h4>
                 <ul className="flex flex-col gap-3">
                   {contacts.map((contact, index) => (
                     <li key={index} className="flex items-center gap-3">
@@ -117,10 +118,10 @@ export default function Footer() {
           </div>
         </Container>
       </footer>
-      <div className={`${styles.footerbottom}  text-[#000] bg-[#e7f2e2]`}>
+      <div className={`${styles.footerbottom}  text-[#000] bg-[#1611795e]`}>
         <Container>
-          <div className="flex flex-wrap justify-between gap-5">
-            <div>&copy; {currentYear} Dar Aluloom International. All Rights Reserved.</div>
+          <div className="flex flex-wrap text-[#fff] justify-between gap-5">
+            <div>&copy; {currentYear} Web .Site Development .</div>
           </div>
         </Container>
       </div>

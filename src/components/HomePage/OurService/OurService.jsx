@@ -59,11 +59,11 @@ export default function CaseStudies() {
                                     />
                                 </div>
                                 <div className="flex flex-col gap-2 px-4 py-8 h-[240px]">
-                                    <h4 className="text-[25px] font-semibold text-[#bf9e60]">{ourservice.title}</h4> 
+                                    <h4 className="text-[25px] font-semibold text-[#161179]">{ourservice.title}</h4> 
                                     <p className="">{ourservice.description}</p>
                                 </div>
                                 <div className="flex items-center gap-2 px-4 py-4 border-t">
-                                    <p className="uppercase text-[15px] font-semibold text-[#bf9e60]">Read More</p>
+                                    <p className="uppercase text-[15px] font-semibold text-[#161179]">Read More</p>
                                     <Image 
                                         src="/images/icons/fast-forward-green.svg" 
                                         alt="Fast forward icon" 

@@ -44,7 +44,7 @@ export default function About (){
                         />
                         <div className="flex flex-col gap-4">
                             <p>At Dar Aluloom International, our mission is to deliver a comprehensive range of services, thoughtfully designed to meet your educational and professional goals. From expert educational consultants and targeted test preparation to personalized subject tutoring, we are committed to being your trusted partner in success. With our guidance, you can enhance your academic performance, unlock your full potential, and pursue new opportunities with confidence.</p>
-                            <p className="text-[#28aa4a]">Here is the list of various college admissions consultation services we offer :</p>
+                            <p className="text-[#161179]">Here is the list of various college admissions consultation services we offer :</p>
                             <div className="flex flex-col gap-3">
                             {about.map((aboutus, index) => (
                               <div className="flex items-center gap-3">

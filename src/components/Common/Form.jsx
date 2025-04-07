@@ -52,32 +52,32 @@ return (
 <section className="pb-[100px]">
     <Container>
         <div className="flex items-center section-direction">
-            <div className="w-[30%] bg-[#05673d]  py-[20px] px-[20px] h-[580px] full-section-icon">
+            <div className="w-[30%] bg-[#161179]  py-[20px] px-[20px] h-[580px] full-section-icon">
                 <div className="flex flex-col gap-5">
                     <h2 className="text-[40px] leading-[50px] text-white form-texts">Contact Information</h2>
                     <p className="font-bold text-white ">You can reach us at:</p>
                     <div className="flex flex-col gap-8">
                         <Link href="tel:+971524495817" className="flex items-center gap-5">
                             <Image src="/images/icons/phone-call.svg" alt-="phone-icon" width="40" height="40" className="w-[40px] h-[40px] form-icon"/>
-                            <h5 className="font-normal text-white font-form">+971524495817</h5>
+                            <h5 className="font-normal text-white font-form">+7341173250</h5>
                         </Link>
                         <Link href="mailto:info@daraluloom.com" className="flex items-center gap-5">
                             <Image src="/images/icons/email-2.svg" alt-="phone-icon" width="40" height="40" className="w-[40px] h-[40px] form-icon"/>
-                            <h5 className="font-normal text-white font-form">info@daraluloom.com</h5>
+                            <h5 className="font-normal text-white font-form">abhishek.com</h5>
                         </Link>
                         <div className="flex items-center gap-5">
                             <Image src="/images/icons/gps.svg" alt-="phone-icon" width="40" height="40" className="w-[40px] h-[40px] form-icon"/>
-                            <h5 className="font-normal text-white font-form">6th floor, Elite Business Center, Al Barsha 1 opp Lulu hypermarket Dubai, UAE
+                            <h5 className="font-normal text-white font-form">aaaaaaaaaaaaaaaaaaaaaaaaaaa
                             </h5>
                         </div>
                         <div className="flex items-center gap-5">
                             <Image src="/images/icons/gps.svg" alt-="phone-icon" width="40" height="40" className="w-[40px] h-[40px] form-icon"/>
-                            <h5 className="font-normal text-white font-form">Block B - B33 - 176, SRTIP Sharjah, UAE
+                            <h5 className="font-normal text-white font-form">bbbbbbbbbbbbbbbbbbbbbbbb
                             </h5>
                         </div>
                         <div className="flex items-center gap-5">
                             <Image src="/images/icons/gps.svg" alt-="phone-icon" width="40" height="40" className="w-[40px] h-[40px] form-icon"/>
-                            <h5 className="font-normal text-white font-form">Compass Building, Al Shohada Road, AL Hamra Industrial Zone,  Ras Al Khaimah, UAE
+                            <h5 className="font-normal text-white font-form">ccccccccccccccccccccccccccccccccccc
                             </h5>
                         </div>
                     </div>
