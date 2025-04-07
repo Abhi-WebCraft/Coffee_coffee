@@ -65,7 +65,7 @@ export default function Footer() {
               <div className={styles.footerLogo}>
               <Link href="/" title="Bhutan holiday tours">
                 {/* <Image src="/images/logo/main-logo.png" alt="Bhutan Best Inbound Tour" width="100" height="100" className='w-[100%]' priority /> */}
-                <h2 className='text-[30px]'><span className='text-[#161179]'>Abhi</span>_*</h2>
+                <h2 className='text-[30px]'><span className='text-[#d62828]'>Abhi</span>_*</h2>
               </Link>
               </div>
               <p className="leading-[26px] text-[#000]">Look no further than the Educational consultants at Dar Aluloom International, your premier destination for top-tier guidance and support.</p>
@@ -78,7 +78,7 @@ export default function Footer() {
                 </div>
             </div>
             <div className={`${styles.footerItems} text-[#bf9e60]`}>
-              <h4 className="text-[#161179]">Quick Links</h4>
+              <h4 className="text-[#d62828]">Quick Links</h4>
               <ul>
                 <li><Link href="/">Home</Link></li>
                 <li><Link href="/about">About Us</Link></li>
@@ -88,7 +88,7 @@ export default function Footer() {
               </ul>
             </div>
             <div className={`${styles.footerItems} text-[#bf9e60]`}>
-              <h4 className="text-[#161179]">Test Prep</h4>
+              <h4 className="text-[#d62828]">Test Prep</h4>
               <ul>
                 <li><Link href="/test-preparation-in-uae">Test Preparation in UAE</Link></li>
                 <li><Link href="/ielts-test-prep-in-uae">IELTS Test Prep</Link></li>
@@ -97,7 +97,7 @@ export default function Footer() {
               </ul>
             </div>
             <div className={`${styles.footerItems} text-[#bf9e60]`}>
-              <h4 className="text-[#161179]">Contact Us</h4>
+              <h4 className="text-[#d62828]">Contact Us</h4>
                 <ul className="flex flex-col gap-3">
                   {contacts.map((contact, index) => (
                     <li key={index} className="flex items-center gap-3">
@@ -118,7 +118,7 @@ export default function Footer() {
           </div>
         </Container>
       </footer>
-      <div className={`${styles.footerbottom}  text-[#000] bg-[#1611795e]`}>
+      <div className={`${styles.footerbottom}  text-[#000] bg-[#d628285e]`}>
         <Container>
           <div className="flex flex-wrap text-[#fff] justify-between gap-5">
             <div>&copy; {currentYear} Web .Site Development .</div>

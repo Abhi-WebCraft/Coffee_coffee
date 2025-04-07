@@ -33,7 +33,7 @@ export default function App() {
   return (
     <section className={styles.bannerslider}>
       {/* Static background image */}
-      <div className="absolute inset-0 w-full h-[700px] bg-center bg-cover" style={{ backgroundImage: 'url(/images/abhi/hero-img.jpg)' }}></div>
+      <div className="absolute inset-0 w-full h-[700px] bg-center bg-cover" style={{ backgroundImage: 'url(/images/abhi/banner.jpg)' }}></div>
 
       {/* Swiper component for sliding text content */}
       <Swiper
@@ -67,9 +67,9 @@ export default function App() {
                     </p>
                     <div className='flex gap-5 pt-3 buttons-banner'>
                       <div>
-                        <Btn title="Let's Build Your Future Together" link="/contact" />
+                        <Btn title="BOOK NOW" link="/contact" />
                       </div>
-                      <Link href="tel:+971524495817">
+                      <Link href="tel:+">
                         <div className='flex items-center gap-3'>
                           <Image src="/images/icons/phone-call.svg" alt="phone-vector" width="50" height="50" className="w-[50px] h-[50px] banner-icon" />
                           <p className='text-[25px] font-bold banner-cta text-white'>+7341173250</p>

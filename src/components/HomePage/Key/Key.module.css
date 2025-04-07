@@ -28,7 +28,7 @@
   }
   
   .serviceBox:hover {
-    background-color: #161179; /* Change background color on hover */
+    background-color: #d62828; /* Change background color on hover */
     color: white; /* Change text color on hover */
   }
   
@@ -52,7 +52,7 @@
     left: -100%; /* Start off-screen to the left */
     width: 100%;
     height: 100%;
-    background-color: #161179; /* Background color to transition to */
+    background-color: #d62828; /* Background color to transition to */
     transition: left 0.5s ease; /* Smooth left transition */
     z-index: 0; /* Behind the content */
   }

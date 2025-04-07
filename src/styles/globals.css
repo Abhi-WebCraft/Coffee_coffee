@@ -235,7 +235,7 @@ img {
   &::after {
       position: absolute;
       content: '';
-      background-color: #161179;
+      background-color: #d62828;
       height: 0%;
       width: 0%;
       border-radius: 5px;
@@ -254,14 +254,14 @@ img {
   }
 
   &.active {
-      background-color: #161179;
+      background-color: #d62828;
       color: white;
-      border-color: #161179;
+      border-color: #d62828;
 
       &:hover {
           background-color: red;
           color: white;
-          border-color: #161179;
+          border-color: #d62828;
       }
   }
 
@@ -310,7 +310,7 @@ img {
   -webkit-text-fill-color: transparent;
 } */
 .rajeev {
-  background: linear-gradient(90deg, #161179, #161179, #fff, #161179);
+  background: linear-gradient(90deg, #d62828, #d62828, #fff, #d62828);
   background-size: 300%; /* Makes the gradient wider for smooth animation */
   background-clip: text;
   -webkit-background-clip: text;

@@ -181,14 +181,14 @@
     display: inline-block;
     font-weight: 600;
     padding: 10px 15px;
-    color: white;
+    color: #000;
   }
   .headerContainer.headerSticky .menuLink {
     color: #000;
   }
   
   .headerContainer.headerSticky .menuLink:hover {
-    color: #065637;
+    color: #d62828;
   }
   
   @media (max-width: 1100px) {
