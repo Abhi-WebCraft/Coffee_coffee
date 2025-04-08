@@ -37,7 +37,7 @@ export default function Key({services, subtitle, title, content}) {
                   height={50}
                   className={`w-[50px] h-[50px] ${styles.serviceIcon}`}
                 />
-                <h4 className="text-[20px] uppercase text-[#bf9e60]">{service.title}</h4>
+                <h4 className="text-[20px] uppercase text-[#000]">{service.title}</h4>
                 <p className={` text-gray-600 ${styles.servicepara}`}>{service.description}</p>
               </div>
             </div>

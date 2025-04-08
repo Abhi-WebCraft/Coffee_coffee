@@ -11,6 +11,7 @@ import About from '@/components/HomePage/About/About';
 import OurService from '@/components/HomePage/OurService/OurService';
 import Counter from '@/components/HomePage/Counter';
 import CtaBlock from '@/components/HomePage/CtaBlock';
+import Testimonials from '@/components/Common/Testimonials';
 // import Form from '@/components/Common/Form';
 
 export default function Home({referrer }) {
@@ -66,6 +67,7 @@ export default function Home({referrer }) {
       <About/>
       <CtaBlock/>
       <Key services={serviceData}  subtitle="Welcome to Web Dev World" title="Your guide to building beautiful and functional websites" />
+      <Testimonials/>
       {/* <Form/> */}
     </Layout>
     </>

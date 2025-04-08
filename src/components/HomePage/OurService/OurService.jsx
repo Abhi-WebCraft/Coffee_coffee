@@ -65,7 +65,7 @@ export default function CaseStudies() {
                                 <div className="flex items-center gap-2 px-4 py-4 border-t">
                                     <p className="uppercase text-[15px] font-semibold text-[#000]">Read More</p>
                                     <Image 
-                                        src="/images/icons/fast-forward-green.svg" 
+                                        src="/images/abhi/fast-forward.svg" 
                                         alt="Fast forward icon" 
                                         width={13} 
                                         height={13} 
