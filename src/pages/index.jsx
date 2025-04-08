@@ -11,7 +11,6 @@ import About from '@/components/HomePage/About/About';
 import OurService from '@/components/HomePage/OurService/OurService';
 import Counter from '@/components/HomePage/Counter';
 import CtaBlock from '@/components/HomePage/CtaBlock';
-import Form from '@/components/Common/Form';
 
 export default function Home({referrer }) {
   console.log(referrer)
@@ -66,7 +65,6 @@ export default function Home({referrer }) {
       <About/>
       <CtaBlock/>
       <Key services={serviceData}  subtitle="Key Differentiators" title="We're Your Reliable Education Consultants" />
-      <Form/>
     </Layout>
     </>
   );
