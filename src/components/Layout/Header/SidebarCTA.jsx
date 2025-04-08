@@ -13,7 +13,7 @@ export default function SidebarCTA({ CallActive, setCallActive }) {
           </div>
           <div className={styles.CTABlock}>
             <div>
-                <h4 className='text-[#28aa4a]'>Get in touch</h4>
+                <h4 className='text-[#261FB3]'>Get in touch</h4>
                 <p className='text-black'>Plan your perfect trip with us.</p>
             </div>
             <div className={styles.CTACol}>
@@ -25,7 +25,7 @@ export default function SidebarCTA({ CallActive, setCallActive }) {
             <div className={styles.CTACol}>
                 <div className={styles.CTAicon}><Image src="images/icons/call-1.svg" width={50} height={50} alt="icon"/></div>
                 <div className={styles.CTAinfo}>
-                <Link href="tel:+97172041111">+97172041111<span>Telephone Number</span></Link>
+                <Link href="tel:+97172041111">+<span>Telephone Number</span></Link>
                 </div>
             </div>
             <div className={styles.CTACol}>

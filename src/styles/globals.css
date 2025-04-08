@@ -235,7 +235,7 @@ img {
   &::after {
       position: absolute;
       content: '';
-      background-color: #d62828;
+      background-color: #261FB3;
       height: 0%;
       width: 0%;
       border-radius: 5px;
@@ -310,7 +310,7 @@ img {
   -webkit-text-fill-color: transparent;
 } */
 .rajeev {
-  background: linear-gradient(90deg, #d62828, #d62828, #fff, #d62828);
+  background: linear-gradient(90deg, #261FB3, #261FB3, #fff, #261FB3);
   background-size: 300%; /* Makes the gradient wider for smooth animation */
   background-clip: text;
   -webkit-background-clip: text;
@@ -554,7 +554,7 @@ img {
 }
 
 .swiper-pagination-bullet {
-  background: #05673d;
+  background: #261FB3;
   width: 12px;
   height: 12px;
   border-radius: 50%;
@@ -627,7 +627,7 @@ img {
   }
 }
 .accordions__item {
-  background-color: #28aa4ad1;
+  background-color: #261FB3;
   border-radius: 10px;
   overflow: hidden;
   transition: 0.5s cubic-bezier(0.65, 0.2, 0.65, 1);
@@ -801,7 +801,7 @@ img {
 }
 
 .open {
-  background-color: #28aa4ad1;
+  background-color: #261FB3;
 }
 
 .open .accordions__icon {
@@ -816,7 +816,7 @@ img {
 .number-text {
   font-size: 70px;
   font-weight: 800;
-  color: #28aa4ad1;
+  color: #261FB3;
   background-color: white;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   width: 164px;
@@ -836,7 +836,7 @@ img {
 }
 
 .flex:hover .arrow-vector {
-  background: #28aa4ad1;
+  background: #261FB3;
   border-radius: 50%;
   transform: rotate(-10deg);
 }
@@ -874,7 +874,7 @@ img {
 
 .solution-box:hover {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-  border-color: #28aa4a; /* Smooth border color transition */
+  border-color: #261FB3; /* Smooth border color transition */
   transform: translateY(-10px); 
   z-index: 1; 
 }

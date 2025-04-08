@@ -52,7 +52,7 @@ return (
 <section className="pb-[100px]">
     <Container>
         <div className="flex items-center section-direction">
-            <div className="w-[30%] bg-[#d62828]  py-[20px] px-[20px] h-[580px] full-section-icon">
+            <div className="w-[30%] bg-[#261FB3]  py-[20px] px-[20px] h-[580px] full-section-icon">
                 <div className="flex flex-col gap-5">
                     <h2 className="text-[40px] leading-[50px] text-white form-texts">Contact Information</h2>
                     <p className="font-bold text-white ">You can reach us at:</p>

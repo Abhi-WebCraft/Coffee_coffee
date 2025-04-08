@@ -6,7 +6,7 @@ import Btn from "../Layout/Btns/Btn";
 
 const CtaBlock = () => {
   return (
-    <section className="cta-block py-[50px] bg-[#d62828] bg-cover bg-no-repeat bg-center" style={{backgroundImage:"url('/images/bg/cta-bg.webp')"}}>
+    <section className="cta-block py-[50px] bg-[#261FB3] bg-cover bg-no-repeat bg-center" style={{backgroundImage:"url('/images/bg/cta-bg.webp')"}}>
       <Container>
         <div className="flex flex-col items-center justify-between h-full gap-6 lg:flex-row">
           <div>

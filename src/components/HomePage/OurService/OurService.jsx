@@ -8,26 +8,26 @@ import SectionTitle from "@/components/Layout/SectionTitle";
 const ourservices = [
     {   
         number: "1",
-        image: "/images/abhi/over-section.jpg",
-        title: "Educational Consultancy",
+        image: "/images/abhi/ovrsection.jpg",
+        title: "Custom Design, No Templates",
         description:
-            "Dar Aluloom Educational Consultancy takes pride in providing top services to students from the UAE who aspire to study in the best Colleges and Universities in the UK, USA, Canada, Singapore, Europe, Australia and New Zealand.",
+            "We design every website from scratch — tailored to your brand and goals. No cookie-cutter stuff here.",
         link: "/education-consultants-in-dubai",
     },
     {
         number: "2",
-        image: "/images/abhi/hero-img.jpg",
-        title: "Subject Tutoring",
+        image: "/images/abhi/ovrsection3.jpg",
+        title: "Lightning-Fast Performance",
         description:
-            "We are dedicated to providing you with the best subject tutorials to help you excel in your academic journey. Whether you're a student looking for additional resources to supplement your learning or a parent seeking guidance to support your child's education.",
+            "Our websites are optimized for speed, ensuring quick load times, smooth user experience, and higher Google rankings.",
         link: "/subject-tutoring-in-uae-dubai",
     },
     { 
         number: "3",
-        image: "/images/abhi/over-section3.jpg",
-        title: "Test Prep",
+        image: "/images/abhi/ovrsection1.jpg",
+        title: "Fully Responsive & Mobile Ready",
         description:
-            "At Dar Aluloom International, we believe in empowering students to reach their highest academic potential. Our specialised test preparation in UAE are designed to equip you with the skills, strategies, and confidence needed to excel in your exams.",
+            "Whether it’s desktop, tablet, or mobile — your site will look and perform perfectly on every device.",
         link: "/test-preparation-in-uae",
     },
    
@@ -58,7 +58,7 @@ export default function CaseStudies() {
                                         quality={100}
                                     />
                                 </div>
-                                <div className="flex flex-col gap-2 px-4 py-8 h-[240px]">
+                                <div className="flex flex-col gap-2 px-4 py-8 h-[180px]">
                                     <h4 className="text-[25px] font-semibold text-[#000]">{ourservice.title}</h4> 
                                     <p className="">{ourservice.description}</p>
                                 </div>
