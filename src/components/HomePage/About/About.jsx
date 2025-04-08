@@ -5,27 +5,15 @@ import Image from "next/image";
 const about =[
     {
         image:"/images/icons/check.svg",
-        text:"Medicine College Admissions Consultant in Dubai",
+        text:"Modern Tech Stack, Next.js, React, Tailwind CSS",
     },
     {
         image:"/images/icons/check.svg",
-        text:"Engineering College Admissions Consultant in Dubai",
+        text:"Goal-Oriented, Built to convert & scale",
     },
     {
         image:"/images/icons/check.svg",
-        text:"US College Admissions Consultant in UAE",
-    },
-    {
-        image:"/images/icons/check.svg",
-        text:"UK College Admissions Consultant in UAE",
-    },
-    {
-        image:"/images/icons/check.svg",
-        text:"European College Admissions Consultant in Dubai",
-    },
-    {
-        image:"/images/icons/check.svg",
-        text:"Canadian college admissions consultant in Dubai",
+        text:"Client-Centric, You imagine, we build",
     },
 ];
 export default function About (){
@@ -34,17 +22,17 @@ export default function About (){
             <Container>
                 <div className="grid-cols-1 gap-8 lg:grid lg:grid-cols-2 md:grid md:grid-cols-2">
                     <div>
-                        <Image src="/images/service/education-1.png" alt="" width="934" height="824" className=" w-[100%] h-[100%]"/>
+                        <Image src="/images/abhi/about.jpg" alt="" width="934" height="824" className=" w-[100%] h-[100%] object-cover"/>
                     </div>
                     <div >
                        <div className={'flex flex-col gap-6 {styles.aboutContent}'}>
                        <SectionTitle
                             subtitle="About The Company"
-                            title="Elevating Educational and Professional Development"
+                            title="Turning Ideas into Scalable Digital Experiences"
                         />
                         <div className="flex flex-col gap-4">
-                            <p>At Dar Aluloom International, our mission is to deliver a comprehensive range of services, thoughtfully designed to meet your educational and professional goals. From expert educational consultants and targeted test preparation to personalized subject tutoring, we are committed to being your trusted partner in success. With our guidance, you can enhance your academic performance, unlock your full potential, and pursue new opportunities with confidence.</p>
-                            <p className="text-[#d62828]">Here is the list of various college admissions consultation services we offer :</p>
+                            <p>We’re a team of passionate developers and designers dedicated to building fast, responsive, and scalable websites that help businesses grow. Whether you're a startup or an established brand, we craft tailored digital solutions that meet your unique needs.</p>
+                            {/* <p className="text-[#261FB3]">Here is the list of various college admissions consultation services we offer :</p> */}
                             <div className="flex flex-col gap-3">
                             {about.map((aboutus, index) => (
                               <div className="flex items-center gap-3">

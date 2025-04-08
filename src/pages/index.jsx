@@ -11,6 +11,7 @@ import About from '@/components/HomePage/About/About';
 import OurService from '@/components/HomePage/OurService/OurService';
 import Counter from '@/components/HomePage/Counter';
 import CtaBlock from '@/components/HomePage/CtaBlock';
+// import Form from '@/components/Common/Form';
 
 export default function Home({referrer }) {
   console.log(referrer)
@@ -24,34 +25,34 @@ export default function Home({referrer }) {
     const serviceData = [
       {   
           number:"1",
-          image: "/images/icons/guidance-1.svg",
-          title: " Expert Consultants",
+          image: "/images/abhi/html.svg",
+          title: "HTML Basics",
           description:
-              "Our experienced consultants offer unmatched guidance, ensuring optimal academic and career decisions for a brighter future.",
+              "HTML (HyperText Markup Language) is the backbone of any website. It structures the content, allowing browsers to display text, images, and links properly.",
           link: "#",
       },
       {
           number:"2",
-          image: "/images/icons/approach.svg",
-          title: "Customised Approach",
+          image: "/images/abhi/style-sheet.svg",
+          title: "CSS Styling",
           description:
-              " We craft personalized solutions, addressing unique academic needs to unlock each student's full potential.",
+              " CSS (Cascading Style Sheets) adds style to your HTML content. From colors to layout, it controls how your website looks on different devices.",
           link: "#",
       },
       { 
           number:"3",
-          image: "/images/icons/solution.svg",
-          title: "Dynamic Solutions",
+          image: "/images/abhi/javascript.svg",
+          title: "JavaScript Power",
           description:
-              " We embrace innovative strategies to provide cutting-edge solutions, ensuring an exceptional and dynamic educational experience.",
+              "JavaScript adds interactivity to your site. Whether it's dropdowns, pop-ups, or animations, JavaScript makes the site dynamic and engaging.",
           link: "#",
       },
       { 
           number:"4",
-          image: "/images/icons/compliance.svg",
-          title: "Accountability",
+          image: "/images/abhi/cross-platform.svg",
+          title: "Responsive Design",
           description:
-              " We prioritize honest communication, accountability and clear processes, building trust and confidence at every step of your journey.",
+              "With responsive design, your website adjusts gracefully to different screen sizes. It’s essential for providing a good experience on both phones and desktops.",
           link: "#",
       },  
   ];
@@ -64,7 +65,8 @@ export default function Home({referrer }) {
       <Counter/>
       <About/>
       <CtaBlock/>
-      <Key services={serviceData}  subtitle="Key Differentiators" title="We're Your Reliable Education Consultants" />
+      <Key services={serviceData}  subtitle="Welcome to Web Dev World" title="Your guide to building beautiful and functional websites" />
+      {/* <Form/> */}
     </Layout>
     </>
   );
