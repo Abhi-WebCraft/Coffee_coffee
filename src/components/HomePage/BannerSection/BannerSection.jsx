@@ -1,81 +1,55 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import styles from './BannerSection.module.css';
-import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import { Autoplay, Navigation } from 'swiper/modules';
+import styles from './BannerSection.module.css'; // optional
 import Container from '@/components/Layout/Container';
 import Btn from '@/components/Layout/Btns/Btn';
 import Link from 'next/link';
-import Image from 'next/image';
 
-export default function App() {
-  // Array of banner data
-  const bannerbg = [
+export default function BannerSection() {
+  const slides = [
     {
-      heading: 'High-Quality  ',
-      heading1: 'Services',
-      heading2: '',
+      heading: 'Empowering Digital Innovation',
+      para: 'Cutting-edge IT solutions that drive your business forward.',
+      image: '/images/banner/2.jpg',
     },
     {
-      heading: 'On-Time ',
-      heading1: 'Delivery:',
-      heading2: '',
+      heading: 'Transforming Ideas Into Technology',
+      para: 'Custom software. Scalable systems. Smarter future.',
+      image: '/images/banner/3.jpg',
     },
     {
-      heading: 'Customer  ',
-      heading1: 'Satisfaction',
-      heading2: '',
+      heading: 'Smart Solutions for a Digital World',
+      para: 'IT services that simplify, streamline, and succeed.',
+      image: '/images/banner/4.jpg',
     },
   ];
 
   return (
     <section className={styles.bannerslider}>
-      {/* Static background image */}
-      <div className="absolute inset-0 w-full h-[700px] bg-center bg-cover" style={{ backgroundImage: 'url(/images/abhi/banner-bg.jpg)' }}></div>
-
-      {/* Swiper component for sliding text content */}
       <Swiper
-        spaceBetween={30}
-        centeredSlides={true}
+        spaceBetween={0}
         loop={true}
-        autoplay={{
-          delay: 2500,
-          disableOnInteraction: false,
-        }}
+        autoplay={{ delay: 4000, disableOnInteraction: false }}
         navigation={true}
-        modules={[Autoplay,Navigation]}
-        className={styles.bannerslider}
+        modules={[Autoplay, Navigation]}
       >
-        {bannerbg.map((banner, index) => (
+        {slides.map((slide, index) => (
           <SwiperSlide key={index}>
-            <div className="relative h-[700px]">
-              <div className="overlay"></div>
+            <div
+              className="relative h-[700px] w-full bg-cover bg-center"
+              style={{ backgroundImage: `url(${slide.image})` }}
+            >
+              <div className="absolute inset-0 bg-black/50"></div>
               <Container>
-                <div className="absolute top-[50%] left-[20%] transform -translate-x-[20%] -translate-y-[50%] max-w-[800px] banner-content">
-                  <div className='flex flex-col gap-6'>
-                    {index === 0 ? (
-                      <h1 className='text-[#fff]'>{banner.heading} <span className='rajeev text-[65px] leading-[75px] banner-h2 '> {banner.heading1}</span>&nbsp;
-                      <span className='text-[65px] leading-[75px] text-[#fff] banner-h2'>{banner.heading2}</span></h1>
-                    ) : (
-                      <h2 className='text-[65px] leading-[75px] text-[#fff] banner-h2'>{banner.heading} <span className='rajeev text-[65px] leading-[75px] banner-h2'> {banner.heading1}</span>&nbsp;
-                      <span className='text-[65px] leading-[75px] text-[#fff] banner-h2'>{banner.heading2}</span></h2>
-                    )}
-                    <p className='text-[18px] text-banner text-white'>
-                    We create custom websites and applications for your business that are not only visually appealing but also user-friendly.
-                    </p>
-                    <div className='flex gap-5 pt-3 buttons-banner'>
-                      <div>
-                        <Btn title="BOOK NOW" link="/contact" />
-                      </div>
-                      <Link href="tel:+">
-                        <div className='flex items-center gap-3'>
-                          <Image src="/images/icons/phone-call.svg" alt="phone-vector" width="50" height="50" className="w-[50px] h-[50px] banner-icon" />
-                          <p className='text-[25px] font-bold banner-cta text-white'>+7341173250</p>
-                        </div>
-                      </Link>
-                    </div>
+                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white max-w-2xl z-10">
+                  <h1 className="text-4xl md:text-[50px] font-[400] leading-[55px] mb-4">{slide.heading}</h1>
+                  <p className="text-lg md:text-[22px] font-medium mb-6">{slide.para}</p>
+                  <div className="flex justify-center gap-5">
+                    {/* <Btn title="Contact Us" link="/contact" /> */}
+                    <Link href="/contact" className='bg-[#fff] border-2 border[#261fb3] py-[12px] px-[45px] rounded-lg text-[17px] font-[600] text-[#261fb3]'>Contact Us</Link>
                   </div>
                 </div>
               </Container>

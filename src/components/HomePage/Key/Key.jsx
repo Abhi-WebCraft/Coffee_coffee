@@ -18,7 +18,7 @@ export default function Key({services, subtitle, title, content}) {
             content={content}
           />
         </div>
-        <div className="grid gap-6 lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1">
+        <div className="grid gap-6 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
           {services.map((service, index) => (
             <div
               key={index}
@@ -30,13 +30,13 @@ export default function Key({services, subtitle, title, content}) {
               </div>
               {/* Content Section */}
               <div className="flex flex-col gap-4">
-                <Image
+                {/* <Image
                   src={service.image}
                   alt={`${service.title} Icon`}
                   width={50}
                   height={50}
                   className={`w-[50px] h-[50px] ${styles.serviceIcon}`}
-                />
+                /> */}
                 <h4 className="text-[20px] uppercase text-[#000]">{service.title}</h4>
                 <p className={` text-gray-600 ${styles.servicepara}`}>{service.description}</p>
               </div>

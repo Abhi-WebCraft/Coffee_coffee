@@ -8,26 +8,50 @@ import SectionTitle from "@/components/Layout/SectionTitle";
 const ourservices = [
     {   
         number: "1",
-        image: "/images/abhi/ovrsection.jpg",
-        title: "Custom Design, No Templates",
+        image: "/images/abhi/3.jpg",
+        title: "Custom Software Development",
         description:
-            "We design every website from scratch — tailored to your brand and goals. No cookie-cutter stuff here.",
+            "We build scalable, secure, and high-performance software tailored to your unique needs — from simple tools to complex platforms.",
         link: "/education-consultants-in-dubai",
     },
     {
         number: "2",
-        image: "/images/abhi/ovrsection3.jpg",
-        title: "Lightning-Fast Performance",
+       image: "/images/abhi/4.jpg",
+        title: "Web Application Development",
         description:
-            "Our websites are optimized for speed, ensuring quick load times, smooth user experience, and higher Google rankings.",
+            "Using modern frameworks like Next.js and React, we create responsive, fast, and user-friendly web apps optimized for performance and SEO.",
         link: "/subject-tutoring-in-uae-dubai",
     },
     { 
         number: "3",
-        image: "/images/abhi/ovrsection1.jpg",
-        title: "Fully Responsive & Mobile Ready",
+         image: "/images/abhi/5.jpg",
+        title: "Mobile App Development",
         description:
-            "Whether it’s desktop, tablet, or mobile — your site will look and perform perfectly on every device.",
+            "We develop cross-platform mobile apps for iOS and Android that deliver great user experiences and business value.",
+        link: "/test-preparation-in-uae",
+    },
+        { 
+        number: "4",
+         image: "/images/abhi/6.jpg",
+        title: "Artificial Intelligence",
+        description:
+            "AI enables businesses to lean into the power of data and insights to enable better responsiveness and decision-making to reimagine operations, experiences, and products.",
+        link: "/test-preparation-in-uae",
+    },
+        { 
+        number: "5",
+         image: "/images/abhi/7.jpg",
+        title: "Process Automation",
+        description:
+            "Process Automation is the use of technology to perform repetitive, rule-based tasks and workflows without human intervention. It helps businesses improve efficiency, reduce errors, cut costs, and increase productivity.",
+        link: "/test-preparation-in-uae",
+    },
+        { 
+        number: "6",
+         image: "/images/abhi/8.jpg",
+        title: "IT Consulting & Strategy",
+        description:
+            "Not sure where to start? Our tech experts help you choose the right tools and architecture to future-proof your product.",
         link: "/test-preparation-in-uae",
     },
    
@@ -37,7 +61,7 @@ export default function CaseStudies() {
     return (
         <section className={styles.servicesection}>
             <Container>
-                <div className="max-w-[1000px] mx-auto text-center mb-[50px]">
+                <div className="max-w-[1000px] mx-auto text-center ">
                     <SectionTitle
                         subtitle="What We Offer" 
                         title="Our Remarkable Services" 

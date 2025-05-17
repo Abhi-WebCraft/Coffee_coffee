@@ -10,9 +10,9 @@ const CtaBlock = () => {
       <Container>
         <div className="flex flex-col items-center justify-between h-full gap-6 lg:flex-row">
           <div>
-            <p className="text-[18px] font-bold text-[#fff]">
+            {/* <p className="text-[18px] font-bold text-[#fff]">
               Web development
-            </p>
+            </p> */}
             <div className=" text-[55px] font-extrabold capitalize text-[#fff] cta-head">
             Ready to Launch Your Next Big Idea?
             </div>
@@ -20,7 +20,7 @@ const CtaBlock = () => {
             Let’s build something amazing together. From design to deployment — we’ve got you covered.
             </p>
           </div>
-          <Btn title=" Get a Free Quote" link="tel:+7341173250"/>
+          <Btn title="Let's Start" link="/contact"/>
         </div>
       </Container>
     </section>
